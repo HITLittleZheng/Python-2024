@@ -1,0 +1,112 @@
+权限和显示命令演示:
+
+ 1090  cd day02
+ 1091  ls -l
+ 1092  chmod a-w 2.txt 
+ 1093  ls -l
+ 1094  chmod a-r 2.txt 
+ 1095  ls -l
+ 1096  cat 2.txt 
+ 1097  sudo cat 2.txt 
+ 1098  chmod a=rx- 2.txt 
+ 1099  ls -l
+ 1100  chmod a=rw- 2.txt 
+ 1101  ls -l
+ 1102  chmod 665 2.txt 
+ 1103  ls -l
+ 1104  chmod 666 2.txt 
+ 1105  echo "Hello world"
+ 1106  date
+ 1107  df -Th
+ 1108  whoami
+ 1109  history 10
+ 1110  ls
+ 1111  ls -l > file.txt
+ 1112  ls
+ 1113  ls -l
+ 1114  date > file.txt 
+ 1115  ls -l >> file.txt 
+ 1116  ls
+ 1117  chmod 777 file.txt 
+ 1118  ls
+ 1119  chmod 665 file.txt 
+ 1120  history 50 > 课上命令演示.txt
+
+显示展示命令:
+ 1121  ls
+ 1122  echo "hello"
+ 1123  echo -n "hello"
+ 1124  ls
+ 1125  echo -n "当前用户名:" > my.log
+ 1126  ls
+ 1127  whoami >> my.log 
+ 1128  date >> my.log 
+ 1129  echo "" >> my.log 
+ 1130  df -Th
+ 1131  df -Th | grep "ext4" >> my.log 
+ 1132  history 8
+ 1137  ls
+ 1138  cd day18
+ 1139  ls
+ 1140  cat demo01.py 
+ 1141  head 10
+ 1142  head -10 demo01.py 
+ 1143  cd 
+ 1144  shutdown 
+ 1145  shutdown -c
+ 1146* 
+ 1147* 
+ 1148  shutdown -c
+ 1149  cd 2110/
+ 1150  ls
+ 1151  cd day19
+ 1152  ls
+ 1153  cd ../day18
+ 1154  ls
+ 1155  cd common/
+ 1156  ls
+ 1157  cd ..
+ 1158  ls
+ 1159  cd ..
+ 1160  ls
+ 1161  cd day13
+ 1162  ls
+ 1163  cd ../day14
+ 1164  ls
+ 1165  cd ..
+ 1166  tree
+ 1167  cd day15
+ 1168  ls
+ 1169  cd student_manager_system/
+ 1170  ls
+ 1171  cd ..
+ 1172  tree
+ 1173  cd 
+ 1174  cd stage02/day02
+ 1175  ls
+ 1176  python3 main.py 
+ 1177  cd 
+ 1178  ls
+ 1179  ln -s /home/tarena/stage02/day02/main.py  main
+ 1180  ls
+ 1181  python3 main
+ 1182  ls
+ 1183  rm hello.py 
+ 1184  cd stage02/day02
+ 1185  ls
+ 1186  rm main.py 
+
+用户的添加和删除
+sudo groupadd aid
+sudo useradd -m levi -g aid
+sudo passwd levi
+sudo vi /etc/sudoers  (配置权限 可选)
+sudo vi /etc/passwd  (配置解释器)
+
+sudo userdel -r levi
+sudo groupdel aid
+
+
+
+
+

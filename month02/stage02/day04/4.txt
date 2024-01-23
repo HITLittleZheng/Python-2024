@@ -1,0 +1,37 @@
+前情回顾
+
+1. 文件
+   文本 ：字符串
+   二进制：字节串　　bytes
+          str.encode()  bytes.decode()
+          b"hello"
+
+2. 文件读写
+   open--> read/write-->close
+
+3. 其他
+
+    with
+    缓冲区 : 减少交互次数提高读写效率  flush()
+    文件偏移量: 记录文件读写位置的数字
+              tell()  seek()
+
+
+练习01
+假设一个目录中有若干文本文件,编写一个
+程序,将这些文本文件合并为一个大文件:union.txt
+放在当前程序所在文件夹
+
+提示: os.listdir() 获取目录下文件名
+     每个文件逐个复制到 union.txt中即可
+
+
+今日总结：
+1. os 模块函数  os.path.getsize() os.listdir()
+2. 元字符 + | + 特殊字符匹配 + 贪婪非贪婪 + 子组
+3. re   findall  search  match
+
+作业： 1. 正则表达式元字符熟悉一遍
+      2. 学生管理系统
+
+

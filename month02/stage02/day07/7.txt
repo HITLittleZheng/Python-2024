@@ -1,0 +1,95 @@
+前情回顾
+
+1. 基础语句
+   select col,.. from [tb] where ....
+   update [tb] set col = val,.. where ...
+   delete from [tb] where ....
+
+2.表修改
+  alter table [tb]  add/drop/modify/change
+
+3.时间数据类型
+  date  datetime time  now()
+
+4. 高级查询语句
+   模糊查询 ： like  %  _
+   起名字: as
+   排序： order by
+   分页/限制 ： limit   offset
+   联合查询： union all
+   子查询： ()
+
+cookie:
+子查询语句也可以放在 insert update delete 中
+但是修改数据的表与子查询的表不能为同一张数据表
+
+正确：
+update class set score=score+1
+where name in (select name from hobby);
+
+错误：
+update class set score=score+1 where score >
+(select score from class where name="Tom")
+
+转换思路，再套一个子查询，起个新的名字
+update class set score=score+1 where score >
+(select score from (select * from class) as c
+where name="Tom");
+
+
+5. 聚合
+   avg()   max()  min()  sum()  count()
+
+
+聚合练习 使用 books
+1. 统计每位作家出版图书的平均价格
+2. 统计每个出版社出版图书数量
+3. 统计同一时间出版图书的最高价格和最低价格
+4. 筛选出那些出版过超过50元图书的出版社，
+并按照其出版图书的平均价格降序排序
+
+
+
+
+
+思考：
+
+微信号 姓名 电话 图片 内容 时间 位置 点赞  评论
+
+
+外键约束的使用必要性
+
+1.有些字段放在同一张数据表中会产生数据冗余
+2.拆分成多张表解决了数据冗余-》如何表达表之间数据关系
+3.分主从在从表建立关系字段-》关系字段没有约束填写内容不符合实际
+4.建立外键约束
+5.表与表之间的关联更紧密 ： 一对多  多对多
+
+
+
+练习： 如下字段需要存储，请设计表关系，建立数据表
+
+微信号  姓名   电话    图片    内容
+ id    user  tel   image   content
+
+时间   位置      点赞      评论
+time  site    `like`     comment
+
+
+今日内容：
+1. 聚合操作
+2. 索引
+3. 外键约束
+4. 表关系
+
+作业： 1. 语句要总结 （前三天）
+      2. 将books表 拆分为 图书  作家  出版社
+         三张数据表，自行设计字段和表关系
+         E-R图表达并创建之
+
+
+
+
+
+
+

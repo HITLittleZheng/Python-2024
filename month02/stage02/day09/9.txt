@@ -1,0 +1,43 @@
+前情回顾
+
+1. 多表查询
+
+   inner join
+   left join
+   right join
+
+2. 视图
+   create view [view] as select..
+   drop view ...
+   alter view ...
+
+3. 函数和存储过程
+
+   delimiter //
+
+   create function func() returns type
+   begin
+      sql;
+      return val;
+   end
+
+   create procedure proc()
+   begin
+      sql;
+   end
+
+
+今日内容：
+1. 事务 （重点）
+2. 数据库优化  （描述）
+3. 数据库备份 表  库
+4. 用户和权限，远程连接
+5. pymysql
+
+作业： 1. 数据库sql语句总结整理
+      2. 函数 类
+
+
+
+
+

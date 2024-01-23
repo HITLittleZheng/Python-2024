@@ -1,0 +1,68 @@
+前情回顾
+
+1. Linux操作系统
+   OS
+   开源   多任务   多用户
+   结构: 内核  文件系统   命令   应用
+   应用: 服务器  桌面  嵌入式
+
+2. Linux文件系统
+
+   文件系统结构:树形结构 tree
+   重要文件夹: /etc  /home
+   表达文件位置: 绝对路径  相对路径
+
+3. Linux命令 (shell命令)
+
+   ls  cd   rm  cp  mv  grep
+   cat  tar
+
+   通配符  管道
+
+
+随堂练习:
+通过输出重定向完成一个文件my.log,格式如下
+
+当前用户名: xxxx
+当前时间
+空行
+ext4格式的磁盘的使用占用情况百分比
+
+
+echo -n "当前用户名:" > my.log
+whoami >> my.log
+date >> my.log
+echo "" >> my.log
+df -Th | grep "ext4" >> my.log
+
+
+vi练习:
+写一个小函数,参数传入一个整数,通过
+执行函数判断这个整数是否为质数,
+是返回 True 不是 False
+
+质数: >1的整数,只能被1和它本身整除
+
+
+cookie:
+ 本地软件安装卸载
+  sudo dpkg -i  youdao.....deb (安装)
+  sudo apt --fix-broken install  (这一步解决依赖关系)
+  sudo dpkg -P youdao-dict (卸载)
+
+ip: 121.5.90.43
+用户名: tarena
+密 码 : tarena
+
+
+今日总结:
+1. 补充基础命令
+2. 服务器常规操作
+   vi   软件   用户   ssh
+
+作业: 1. 今天的命令自己巩固
+     2. 自己总结linux
+     3. 自己创建一个新的用户
+
+
+

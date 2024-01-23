@@ -1,0 +1,42 @@
+吕泽:lvze_work@126.com
+QQ:1259296994
+===============================
+
+
+随堂训练
+
+绝对路径:
+主目录下,2110中day02里的homework.txt
+/home/tarena/2110/day02/homework.txt
+
+
+相对路径:
+现在位置 -> 主目录下文档中
+找到2110中day02里的homework.txt
+../2110/day02/homework.txt
+
+
+统计/etc目录下有多少个子文件
+ ls /etc | wc -w
+
+
+将第一阶段自己写的代码压缩为zip格式
+起名 myself-1.zip 放在文档目录下
+将老师给的代码压缩为bz2格式
+起名teacher01.tar.bz2
+也放在文档目录中
+ cd
+ tar -cjf teacher01.tar.bz2 2110
+ zip -r myself-1 pythonweb
+ mv teacher01.tar.bz2 myself-1.zip  文档
+
+今日总结
+1. 认知Linux
+2. 文件系统 (绝对路径相对路径)
+3. Linux命令
+
+作业:
+1. 命令自己练习一遍
+2. 函数  类
+
+
