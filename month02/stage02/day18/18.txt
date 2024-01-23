@@ -1,0 +1,109 @@
+前情回顾
+
+1. epoll
+  epoll 和 select
+  基于epoll的IO多路复用模型
+
+2. http协议
+
+  应用层  tcp  超文本传输
+  网页获取流程
+
+3. 请求响应格式
+
+   请求行 ： GET  /   HTTP/1.1
+   请求头
+   空行
+   请求体 ： POST
+
+   响应行 ： HTTP/1.1 200 OK
+   响应头 ： Content-Type:text/html
+   空行
+   响应体 ： 数据信息
+
+4. web server
+
+
+网络并发编程 （核心编程）
+
+1. 网络
+   理论内容： OSI  TCP/IP   TCP三次握手
+            tcp和udp对比   tcp首部   HTTP协议格式
+
+   tcp套接字（重点）： 粘包
+   udp套接字
+
+2. 进程线程
+   理论内容： 进程和线程的区别  进程三态
+            python线程GIL
+
+   进程编程（重点） ： 自定义进程类  孤儿僵尸
+   线程编程 ： 同步互斥问题
+
+3. IO
+   理论内容： IO的概念   epoll和select对比
+
+   阻塞IO 非阻塞IO
+   IO 多路复用： select  epoll
+
+4. 综合架构 （重点）
+   多进程多线程网络并发模型
+   IO并发模型
+
+5. 综合程序
+
+  学生管理系统： 函数  文件读写  正则表达式
+  聊天室： 函数  udp套接字   循环网络   多进程
+  ftp文件服务器： 类    tcp    多线程并发
+  webserver： 类   tcp  http  IO并发
+
+
+
+GIT官网：　https://git-scm.com/
+
+
+git 基础指令
+
+    git init 初始化仓库
+    git status  查看仓库状态
+
+    添加修改文件  git  add ...
+    移动         git  mv ...
+    删除         git  rm ...
+
+    仓库保存    git commit -m xxxx
+
+    git log
+    git checkout --  file
+
+
+版本管理 ： 依赖于 commit_id
+    查看id
+    git log
+    git reflog
+
+    git reset --hard HEAD^
+    git reset --hard commit_id
+    git reset --hard tag
+
+    git tag v1.0 -m "xxxxxx"
+
+分支管理
+    git branch
+    git checkout
+
+    git merge
+
+
+今日内容：
+ 1. 项目开发流程
+ 2. git的使用
+
+作业： 二阶段内容总结
+
+
+
+
+
+
+

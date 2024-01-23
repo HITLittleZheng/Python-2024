@@ -1,0 +1,184 @@
+前情回顾
+
+1. webserver
+
+2. 项目开发流程
+
+3. git学习
+
+   基础指令： git init
+            git add/mv/rm
+            git commit
+
+            git checkout --
+            git status
+
+   版本控制： git log
+            git reflog
+
+            git reset --hard commit_id
+
+            git tag
+
+   分支管理： git  branch
+            git checkout
+            git  merge
+
+4. git 远程
+
+   git clone  地址 （http  ssh）
+   git pull
+
+   gitee.com-->远程仓库
+   git remote add origin  地址
+   git push -u origin master
+
+
+在线词典
+
+需求分析： C/S
+ 见图
+
+技术分析
+  并发 ： 多进程并发
+  网络 ： tcp网络
+  持久化存储 ： mysql数据库
+  客户端两个界面怎么配合
+
+模块划分 ： 类  MVC
+   登录  注册   查单词   历史记录
+
+数据库建设  dict   见详细设计文档
+
+   words :  id   word  mean
+
+   user: id user  passwd
+
+   history : id  name  word  time
+   history : id  user_id  words_id  time
+   history : id  words  time  user_id
+
+通信协议  见详细设计文档
+   请求 ：  请求类型   请求参数
+   响应 ：  处理情况
+
+具体逻辑分析
+   搭建框架：
+     服务端：tcp多进程并发 (类)
+     数据处理 ： day10 dict练习
+
+     客户端 ： 参考ftp文件服务器
+
+   注册
+      客户端
+      　　　发送请求
+      　　　等待响应　　Ｔ　Ｆ
+      　　　判断是否注册成功
+
+      服务端
+      　　　接收请求，解析　
+      　　　判断是否可以注册
+      　　　发送响应结果
+      　　　（可以：添加数据库信息）
+
+
+   登录
+
+
+   查单词
+       客户端：　进入查单词状态
+       　　　　　　　发送请求
+       　　　　　　　得到响应
+                   如果有单词解释打印
+
+       服务端：　接收请求
+       　　　　　查询单词
+       　　　　　　如果查到则发送　Ｔ 解释
+　　　　　　　　　　　　插入历史记录
+　　　　　　　　　　
+　　　　　　　　　　没有查到　Ｆ
+
+   历史记录
+
+优化完善
+
+
+=========================================
+
+Linux操作系统
+
+理论知识:
+  1. 操作系统在软件开发体系中的作用
+  2. Linux 特点  应用  结构
+
+操作技能(重点):
+  1. 文件位置表达 : 绝对路径  相对路径
+  2. 基础命令
+  3. 服务器基本操作: vi修改文件
+                   apt安装软件
+                   useradd创建用户
+                   ssh远程链接和拷贝文件
+
+其他使用技巧: 通配符  输出重定向  管道  快捷键
+
+数据存取
+
+文件
+  文件读写： open()   read()/write()  close()
+  正则表达式：  元字符  基本规则  re
+
+数据库
+  基础必会：建库建表  增删改查  高级查询
+          索引创建  聚合查询  外键约束
+          表关系建设  表关联查询   存储过程
+          事务
+
+  面试提高： 视图   事务隔离原理   数据库优化
+           配置和mysql特征   具体项目的表设计提问
+
+  其他认知： 远程操作   备份   pymysql
+
+
+网络并发编程 （核心编程）
+
+1. 网络
+   理论内容： OSI  TCP/IP   TCP三次握手
+            tcp和udp对比   tcp首部   HTTP协议格式
+
+   tcp套接字（重点）： 粘包
+   udp套接字
+
+2. 进程线程
+   理论内容： 进程和线程的区别  进程三态
+            python线程GIL
+
+   进程编程（重点） ： 自定义进程类  孤儿僵尸
+   线程编程 ： 同步互斥问题
+
+3. IO
+   理论内容： IO的概念   epoll和select对比
+
+   阻塞IO 非阻塞IO
+   IO 多路复用： select  epoll
+
+4. 综合架构 （重点）
+   多进程多线程网络并发模型
+   IO并发模型
+
+5. 综合程序
+
+  学生管理系统： 函数  文件读写  正则表达式
+  聊天室： 函数  udp套接字   循环网络   多进程
+  ftp文件服务器： 类    tcp    多线程并发
+  webserver： 类   tcp  http  IO并发
+  在线词典： 类  tcp  多进程并发  MVC  数据库
+
+其他技能： 软件开发流程   GIT的使用
+
+
+
+
+
+
+
+
