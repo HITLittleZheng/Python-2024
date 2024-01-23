@@ -1,3 +1,2 @@
-# Python-2024-
-Python学习2024春----------达内
+# Python学习2024春----------达内
 [![Github Watchers](https://img.shields.io/github/watchers/HITLittleZheng/Python-2024.svg?style=flat&label=watchers&color=blue)](https://github.com/HITLittleZheng/Python-2024/watchers)  [![Github Stars](https://img.shields.io/github/stars/HITLittleZheng/Python-2024.svg?style=flat&label=stars&color=yellow)](https://github.com/HITLittleZheng/Python-2024/stargazers)  [![Github Forks](https://img.shields.io/github/forks/HITLittleZheng/Python-2024.svg?style=flat&label=forks&color=green)](https://github.com/HITLittleZheng/Python-2024/network/members)  [![Github Repository Size](https://img.shields.io/github/repo-size/HITLittleZheng/Python-2024.svg?style=flat&label=repo-size&color=orange)](https://github.com/HITLittleZheng/Python-2024)
