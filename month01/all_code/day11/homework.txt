@@ -1,0 +1,15 @@
+作业
+1. 当天练习独立完成
+2. 实现员工(员工编号/部门编号/姓名/工资)信息管理系统
+    需求:
+        添加
+            view:录入信息
+            controller:设置编号,追加列表
+        查看
+            view:遍历controller列表,打印信息
+        删除
+            view:录入编号
+            controller:移除信息
+        修改
+            view:录入信息
+            controller:更新信息

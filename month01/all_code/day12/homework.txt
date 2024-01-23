@@ -1,0 +1,29 @@
+作业
+1. 当天练习独立完成
+2. 修改员工信息管理系统
+    -- 将controller中start_id由实例变量改为类变量
+    -- 封装MVC,对外提供必要的功能,隐藏实现细节
+        view:提供main
+        controller:提供添加/删除/修改
+
+3.以面向对象思想,描述下列情景.
+    玩家攻击敌人,敌人受伤(根据玩家攻击力，减少敌人的血量).
+class Player:
+    def attack(self,target):
+        print("发起攻击")
+        target.damage() # 跨类调用
+
+class Enemy:
+    def damage(self):
+        print("头顶爆字")
+
+p = Player()
+e = Enemy()
+p.attack(e)
+
+4.以面向对象思想,描述下列情景.
+    张无忌教赵敏九阳神功
+    赵敏教张无忌玉女心经
+    张无忌工作挣了5000元
+    赵敏工作挣了10000元
+    提示:创建一个类
